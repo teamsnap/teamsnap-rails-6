@@ -52,4 +52,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'omniauth-teamsnap'
+gem 'omniauth-rails_csrf_protection', '~> 0.1'
 gem 'teamsnap_rb', '~> 2.1'
