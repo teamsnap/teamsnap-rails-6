@@ -1,4 +1,4 @@
-require 'teamsnap'
+require "teamsnap"
 
 class TeamsController < ApplicationController
   def index
