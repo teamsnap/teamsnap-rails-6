@@ -12,9 +12,9 @@ to get your OAuth client id and secret.
   NOTE: In your TeamsSnap application's settings, ensure that the oauth callback
 is entered correctly: http://localhost:3000/auth/teamsnap/callback
 
-3. Copy the `.env.example` to `.env`
-4. Enter your token and secret from step 2 in `.env`
-5. Start the server: `rails s`
+3. Enter your token and secret from step 2 in `.env.docker`
+4. Build docker container `docker-compose build`
+5. Start the server: `docker-compose up`
 6. Browse to http://localhost:3000/auth/teamsnap to initiate login.
 7. Verify you are redirected back to your app with a valid authentication token.
 8. You can now develop your app, storing the authentication tokens as required
