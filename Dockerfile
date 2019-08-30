@@ -1,4 +1,4 @@
-FROM ruby:2.6.3-slim
+FROM ruby:2.6.4-slim
 
 RUN apt-get update -qq && apt-get install -y build-essential nodejs curl
 
