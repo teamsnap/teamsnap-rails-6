@@ -5,7 +5,7 @@ RUN apt-get update -qq && apt-get install -y build-essential nodejs curl
 WORKDIR /usr/src/app/
 
 # Install node version that will enable installation of yarn
-RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 
 RUN apt-get install -y --no-install-recommends \
     nodejs \
