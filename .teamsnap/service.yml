@@ -1,0 +1,23 @@
+---
+classification: app
+production:
+  tier: 
+  url: 
+  hosting_platform: 
+  logging: false
+performance_monitoring: []
+error_monitoring: []
+continuous_integration: []
+bug_tracking: []
+documentation: []
+deployment:
+- name: docker
+  reference_id: n/a
+languages:
+- name: Ruby
+  reference_id: n/a
+  version: ruby-2.7.0
+frameworks:
+- name: Rails
+  reference_id: n/a
+  version: 6.0.3.2
