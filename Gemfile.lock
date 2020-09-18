@@ -149,7 +149,7 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (4.0.6)
-    puma (4.3.6)
+    puma (5.0.0)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-proxy (0.6.5)
@@ -267,7 +267,7 @@ DEPENDENCIES
   omniauth-teamsnap
   pry-byebug
   pry-rails
-  puma (~> 4.3)
+  puma (~> 5.0)
   rails (~> 6.0.3)
   sass-rails (~> 6)
   selenium-webdriver
