@@ -1,6 +1,6 @@
 FROM ruby:2.7.2-slim
 
-RUN apt-get update -qq && apt-get install -y build-essential nodejs curl
+RUN apt-get update -qq && apt-get install -y build-essential curl
 
 WORKDIR /usr/src/app/
 
@@ -11,15 +11,16 @@ RUN apt-get install -y --no-install-recommends \
     nodejs \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-COPY Gemfile* package.json yarn.lock /usr/src/app/
+COPY Gemfile* ./
 RUN bundle install
 RUN npm install -g yarn
 # RUN yarn -v
 # RUN which yarn
 # RUN yarn config current
+COPY package.json yarn.lock ./
 RUN yarn install
 
-COPY . /usr/src/app/
+COPY . .
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
