@@ -13,7 +13,7 @@ deployment:
 - name: docker
 languages:
 - name: Ruby
-  version: ruby-2.7.0
+  version: 2.7.2
 frameworks:
 - name: Rails
-  version: 6.0.3.2
+  version: 6.0.3.3
